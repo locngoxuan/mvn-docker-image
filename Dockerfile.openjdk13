@@ -1,6 +1,7 @@
 FROM openjdk:13-alpine
 
-MAINTAINER LOC NGO <xuanloc0511@gmail.com>
+LABEL maintainer.email="xuanloc0511@gmail.com"
+LABEL maintainer.name="Loc Ngo"
 
 RUN mkdir -p /opt
 

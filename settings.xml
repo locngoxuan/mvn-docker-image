@@ -79,52 +79,6 @@
                 </repository>
             </repositories>
         </profile>
-
-        <profile>
-            <id>FortnaLegacy</id>
-            <repositories>
-                <repository>
-                    <id>libs-release</id>
-                    <name>Fortna Libs Release</name>
-                    <url>http://repo.wcs.fortna.net/artifactory/libs-release</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
-
-                <repository>
-                    <id>libs-snapshot</id>
-                    <name>Fortna Libs Snapshot</name>
-                    <url>http://repo.wcs.fortna.net/artifactory/libs-snapshot</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </repository>
-            </repositories>
-
-            <pluginRepositories>
-                <pluginRepository>
-                    <id>plugins-release</id>
-                    <url>http://repo.wcs.fortna.net/artifactory/plugins-release</url>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </pluginRepository>
-                <pluginRepository>
-                    <id>plugins-snapshot</id>
-                    <url>http://repo.wcs.fortna.net/artifactory/plugins-snapshot</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                    </snapshots>
-                </pluginRepository>
-            </pluginRepositories>
-        </profile>
     </profiles>
 
     <mirrors>

@@ -1,8 +1,7 @@
-FROM openjdk:12-alpine
+FROM openjdk:8u292-slim
 
 LABEL maintainer.email="xuanloc0511@gmail.com"
 LABEL maintainer.name="Loc Ngo"
-
 RUN mkdir -p /opt
 
 ADD /tmp/maven /opt/maven

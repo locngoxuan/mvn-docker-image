@@ -15,6 +15,7 @@ download_maven: clean
 	mv tmp/apache-maven-$(VERSION) tmp/maven
 
 docker:
+	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk8 -f Dockerfile.openjdk8
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk9 -f Dockerfile.openjdk9
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk10 -f Dockerfile.openjdk10
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk11 -f Dockerfile.openjdk11
@@ -22,5 +23,8 @@ docker:
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk13 -f Dockerfile.openjdk13
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk14 -f Dockerfile.openjdk14
 	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk15 -f Dockerfile.openjdk15
+	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk16 -f Dockerfile.openjdk16
+	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk17 -f Dockerfile.openjdk17
+	docker build . --no-cache --tag xuanloc0511/mvn-$(VERSION)-openjdk18 -f Dockerfile.openjdk18
 
 build: download_maven docker clean
