@@ -1,4 +1,4 @@
-FROM openjdk:15-alpine
+FROM openjdk:16-alpine
 
 LABEL maintainer.email="xuanloc0511@gmail.com"
 LABEL maintainer.name="Loc Ngo"
